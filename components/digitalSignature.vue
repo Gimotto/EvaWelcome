@@ -20,7 +20,7 @@
             <vs-col vs-w="2" vs-type="flex" vs-justify="center" vs-align="center">
             </vs-col>
             <vs-col vs-w="4" vs-type="flex" vs-justify="center" vs-align="center">
-                <b @click="clear" style="color:red; font-size:20px">Cancella Tutto</b>
+                <b @click="clear" style="color:#BC1254; font-size:20px">Cancella Tutto</b>
             </vs-col>
             <vs-col vs-w="1" vs-type="flex" vs-justify="center" vs-align="center">
             </vs-col>
@@ -28,24 +28,23 @@
     </div>
 <vs-popup class="confirmSignature"  title="La firma digitale è chiara e scritta in modo corretto?" :active.sync="popupSignature">
     <img :src="image" style="width:100%">
-    <vs-button 
-        color="red" 
-        size="large" 
-        style="width: 50%;"
-        icon="clear"
-        icon-after
-        @click="popupSignature = false" 
-        type="filled">Annulla
-    </vs-button>
-    <vs-button 
+    <vs-row>
+            <vs-col vs-w="6" vs-type="flex" vs-justify="center" vs-align="center">
+                <u @click="popupSignature = false" style="color:#BC1254; font-size:20px">Annulla</u>
+            </vs-col>
+            <vs-col vs-w="6" vs-type="flex" vs-justify="center" vs-align="center">
+              <vs-button 
         color="#BC1254" 
         size="large" 
-        style="width: 50%;"
+        style="width: 100%;"
         icon="arrow_forward"
         icon-after
         @click="confirmSignature()" 
         type="filled">Conferma
     </vs-button>
+            </vs-col>
+        </vs-row>
+    
 </vs-popup>
 </div>
 </template>
