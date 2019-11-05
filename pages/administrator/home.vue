@@ -66,13 +66,24 @@
                     <vs-list-item icon="mail" title="Email" :subtitle="data[indextr].email"></vs-list-item>
                     <vs-list-item icon="call" title="Telefono" :subtitle="data[indextr].numtel"></vs-list-item>
                     <vs-list-item icon="ballot" title="Descrizione" :subtitle="data[indextr].descrizione"></vs-list-item>
-                  </vs-list>
+                    <p @click="openPopup('Firma Digitale Entrata',data[indextr].enterSignature)">
+                      <vs-list-item icon="image" title="Firma Digitale Entrata">
+                      </vs-list-item>
+                    </p>
+                    <p @click="openPopup('Firma Digitale Uscita',data[indextr].outSignature)">
+                      <vs-list-item icon="image" title="Firma Digitale Uscita">
+                      </vs-list-item>
+                    </p>
+                   </vs-list>
               </template>
             </vs-tr>
           </template>
         </vs-table> 
       </vs-col>
     </vs-row>
+<vs-popup :title="titlePopup" :active.sync="popupSignature">
+  <img :src="signature" style="width:100%">
+</vs-popup>
   </div>
 </template>
 <script>
@@ -81,6 +92,9 @@ export default {
   middleware: 'badges',
   data(){
     return{
+      titlePopup: '',
+      signature: '',
+      popupSignature: false,
       data: "",
       users: [],
       badges: []
@@ -104,7 +118,11 @@ export default {
     else this.$router.push("/administrator")
   },
   methods:{
-
+    openPopup(title,image){
+      this.titlePopup = title
+      this.signature = image
+      this.popupSignature = true
+    },
     async deleteUser(id){
       console.log(id)
       await this.$axios.delete('http://localhost:8080/users/'+id+'/')
@@ -116,10 +134,10 @@ export default {
         console.log(e)
       })
     },
-    async unlockBadge(badge){
-      await this.$store.dispatch('badges/delBadge', badge)
-      this.getUsers()
+    unlockBadge(badge){
+      this.$store.dispatch('badges/delBadge', {badgeId: badge, image: ''})
       this.$vs.notify({title:'Badge Sbloccato',text:'Badge sbloccato manualmente',color:'warning'})
+      setTimeout(() =>{this.getUsers()},1000)
                             
     },
     getCurrentDate(){

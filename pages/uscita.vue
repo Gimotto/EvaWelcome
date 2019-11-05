@@ -69,6 +69,36 @@
         </div> 
         </div>
         <div v-if="popupActive2">
+            <div class="bodyText">
+                <div align="center">
+                <digitalSignature ref="digitalSignature" @confirmSignature="getImage" />
+                </div>
+            </div>
+
+            <div class="footerText" style="margin-top:120px;">
+                <vs-row>
+                <vs-col vs-w="3" vs-type="flex" vs-justify="center" vs-align="center">
+                    <nuxt-link to="/ingresso/stepRole">
+                        <u style="color:#BC1254; font-size:20px">Indietro</u>
+                    </nuxt-link>
+                </vs-col>
+                <vs-col vs-w="6"></vs-col>
+                <vs-col vs-w="3" vs-type="flex" vs-justify="center" vs-align="center">
+                    <vs-button 
+                    color="#BC1254" 
+                    size="large" 
+                    style="width: 100%;"
+                    icon="arrow_forward"
+                    icon-after
+                    @click="confirmcheckSignature()" 
+                    type="filled">Conferma
+                    </vs-button>
+                </vs-col>
+                </vs-row>
+            </div>
+        </div>
+
+        <div v-if="popupActive3">
             <vs-row>
             <vs-col vs-w="12">
                 <h1 style="padding-top:20px; font-size: 48px">Uscita confermata!<br> Grazie per la disponibilità.</h1><h2 style="padding-top:50px;">Vi ricordiamo di consegnare il badge in segreteria</h2>
@@ -97,10 +127,13 @@
 </template>
 
 <script>
+
+import digitalSignature from '@/components/digitalSignature'
 export default {
     name:'uscita',
     layout:'pageLayout',
     middleware: 'badges',
+    components: {digitalSignature},
     computed:{
         badges(){
             return this.$store.getters['badges/getBadges']
@@ -128,10 +161,19 @@ export default {
             researchBadge: '',
             badgesList: true,
             popupActive1:false,
-            popupActive2:false
+            popupActive2:false,
+            popupActive3:false,
+            imageSignature: ''
         }
     },
     methods:{
+            getImage(image){
+                this.imageSignature = image
+                this.confirmDeleteBadge()
+            },
+            confirmcheckSignature() {
+            this.$refs.digitalSignature.save()
+        },
         confirmBadge(num){
             this.badgesList = false
             this.popupActive1 = true
@@ -144,14 +186,22 @@ export default {
             this.popupActive2 = false
             this.selectedBadge = ''
         },
+        confirmDeleteBadge(image){
+            //chiamata store per eliminare badge
+            this.$store.dispatch('badges/delBadge', {badgeId: this.selectedBadge, image: this.imageSignature})
+
+            setTimeout( ()=>{
+            this.badgesList = false
+            this.popupActive1 = false
+            this.popupActive2 = false
+            this.popupActive3 = true}, 100);
+            window.welcome = setTimeout(this.closeReturnHome, 8000);        
+        },
         deleteBadge(){
             this.badgesList = false
             this.popupActive1 = false
             this.popupActive2 = true
-
-            //chiamata store per eliminare badge
-            this.$store.dispatch('badges/delBadge', this.selectedBadge)
-            window.welcome = setTimeout(this.closeReturnHome, 8000);
+            this.popupActive3 = false
         },
         closeReturnHome(){
             this.popupActive1 = false

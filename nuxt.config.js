@@ -30,7 +30,8 @@ export default {
   */
   plugins: [
     '@/plugins/vuesax',
-    '@/plugins/app'
+    '@/plugins/app',
+    '@/plugins/vueSignaturePad'
   ],
   /*
   ** Nuxt.js dev-modules
