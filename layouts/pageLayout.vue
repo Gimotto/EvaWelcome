@@ -15,12 +15,6 @@ export default {
   components: {
     topNavBar
   },
-  //middleware: 'info',
-  computed: {
-    currentPage() {
-      return this.$router.history.current.name
-    }
-  },
   head(){
     
    
@@ -55,7 +49,6 @@ html {
 }
 
 .nuxtchild{
-  
     margin-top:30px; 
     margin-right:100px;
     margin-left:100px;

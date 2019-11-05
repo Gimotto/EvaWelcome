@@ -19,6 +19,3 @@ export default {
     name: "topNavBar"
 }
 </script>
-<style>
-
-</style>

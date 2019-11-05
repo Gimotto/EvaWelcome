@@ -124,7 +124,6 @@ export default {
       this.popupSignature = true
     },
     async deleteUser(id){
-      console.log(id)
       await this.$axios.delete('http://localhost:8080/users/'+id+'/')
       .then(res =>{
       this.getUsers()

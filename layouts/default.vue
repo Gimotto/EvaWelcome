@@ -13,11 +13,6 @@
 import topNavBar from '@/components/topNavBar'
 export default {  
   components: {topNavBar},
-  computed: {
-    currentPage() {
-      return this.$router.history.current.name
-    }
-  },
   head(){
     return {
       title: 'EvaWelcome',
@@ -53,7 +48,6 @@ html {
     height: calc(100vh - 90px);
     display: flex;
     flex-direction: column;
-    
 }
 .allPage{
 padding:20px;

@@ -24,8 +24,6 @@
 
 <script>
 export default {
-  computed: {
-  },
   head(){
     return {
       title: 'EvaAdmin',
@@ -39,11 +37,6 @@ export default {
       }
     ]
     }
-  },
-  data(){
-      return{
-
-      }
   },
   methods: {
       logout(){

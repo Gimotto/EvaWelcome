@@ -3,6 +3,7 @@
         <div class="headerText" align="center">
             <h2>Benvenuto</h2><br>
             <p style="font-family: Comic Sans MS; font-size:18px;">Inserisci i tuoi dati Anagrafici per proseguire con la registrazione:
+
             </p>
         </div>
         <div class="bodyText">
