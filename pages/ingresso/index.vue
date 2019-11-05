@@ -2,14 +2,15 @@
     <div>
         <div class="headerText" align="center">
             <h2>Benvenuto</h2><br>
-            <h3>Inserisci i tuoi dati Anagrafici per proseguire con la registrazione:</h3>
+            <p style="font-family: Comic Sans MS; font-size:18px;">Inserisci i tuoi dati Anagrafici per proseguire con la registrazione:
+            </p>
         </div>
         <div class="bodyText">
         <vs-row>
             <vs-col  vs-w="6">
                 <div >
                     <vs-input 
-                    label="Nome" 
+                    label="Nome*" 
                     style="width:100%; padding: 20px;"
                     size="xlarge"
                     @blur="blurcheckAnagrafica(formAnagrafica.nome, 'nome')"
@@ -17,7 +18,7 @@
                     v-model="formAnagrafica.nome"/>
                     
                     <vs-input 
-                    label="Cognome" 
+                    label="Cognome*" 
                     size="xlarge"
                    style="width:100%; padding: 20px;"
                     @blur="blurcheckAnagrafica(formAnagrafica.cognome, 'cognome')"
@@ -45,10 +46,8 @@
                 <vs-checkbox  color="#BC1254" class="checkPrivacy" style=" max-width:200px; padding-bottom:10px;" size="large" v-model="privacyCheck"><b>Conferma Privacy</b></vs-checkbox>
             </vs-col>
             <vs-col  vs-w="9" align="left">
-                <p >Confermando dichiari di aver letto 
-                    e accetti integralmente le nostre Condizioni generali 
-                    di uso e vendita. Prendi visione della nostra Informativa sulla privacy, 
-                    della nostra Informativa sui Cookie</p>
+                <p >Confermando dichiari di aver letto e accetti integralmente le nostre condizioni generali di uso.
+                    Prendi visione della nostra Informativa sulla privacy e della nostra Informativa sui Cookie</p>
             </vs-col>
             <vs-col vs-w= "12" align="center">
             <div style="height:15px;"><b style="color: red; padding-bottom:10px;">{{errorprivacyCheck}}</b></div>
@@ -59,7 +58,7 @@
             <vs-row>
                 <vs-col vs-w="3" vs-type="flex" vs-justify="center" vs-align="center">
                     <nuxt-link to="/">
-                    <u style="color:#BC1254; font-size:20px">Indietro</u>
+                    <b style="color:#BC1254; font-size:20px">Indietro</b>
                     </nuxt-link>
                 </vs-col>
                 <vs-col vs-w="6"></vs-col>

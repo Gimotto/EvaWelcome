@@ -26,11 +26,11 @@
             </vs-col>
         </vs-row>
     </div>
-<vs-popup class="confirmSignature"  title="La firma digitale è chiara e scritta in modo corretto?" :active.sync="popupSignature">
+<vs-popup class="confirmSignature" button-close-hidden  title="La firma digitale è chiara e scritta in modo corretto?" :active.sync="popupSignature">
     <img :src="image" style="width:100%">
     <vs-row>
             <vs-col vs-w="6" vs-type="flex" vs-justify="center" vs-align="center">
-                <u @click="popupSignature = false" style="color:#BC1254; font-size:20px">Annulla</u>
+                <b @click="popupSignature = false" style="color:#BC1254; font-size:20px">Annulla</b>
             </vs-col>
             <vs-col vs-w="6" vs-type="flex" vs-justify="center" vs-align="center">
               <vs-button 

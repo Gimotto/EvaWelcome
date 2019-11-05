@@ -1,7 +1,8 @@
 <template>
 <div>
     <div class="headerText" align="center">
-            <h2>Grazie per la tua pazienza<br>Ecco il tuo numero</h2>
+            <h2>Grazie per la tua pazienza</h2><br>
+             <p style="font-family: Comic Sans MS; font-size:18px;">Ecco il tuo numero</p>
     </div>
     <div class="bodyText">
         <div align="center">

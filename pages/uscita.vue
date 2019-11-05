@@ -13,7 +13,7 @@
             </vs-row>
             <vs-col vs-w="12">
                 <vs-col v-show="filtredBadges==0" vs-w="12" vs-type="flex" vs-justify="center" vs-align="center">
-                    <h2>Non ci sono badge</h2>
+                    <p style="font-family: Comic Sans MS; font-size:20px;">Non ci sono badge</p>
                 </vs-col>
                 <table class="scrolltable">
                     <tr>
@@ -49,10 +49,10 @@
               </div>
             </vs-col>
             </vs-row>
-            <div class="footerText" style="margin-top:130px;">
+            <div class="footerText" style="margin-top:140px;">
             <vs-row>
                 <vs-col vs-w="3" vs-type="flex" vs-justify="center" vs-align="center">
-                    <u @click="cancelConfirm()" style="color:#BC1254; cursor: pointer; font-size:20px">Indietro</u>
+                    <b @click="cancelConfirm()" style="color:#BC1254; cursor: pointer; font-size:20px">Indietro</b>
                 </vs-col>
                 <vs-col vs-w="6"></vs-col>
                 <vs-col vs-w="3" vs-type="flex" vs-justify="center" vs-align="center">
@@ -78,10 +78,8 @@
             <div class="footerText" style="margin-top:120px;">
                 <vs-row>
                 <vs-col vs-w="3" vs-type="flex" vs-justify="center" vs-align="center">
-                    <nuxt-link to="/ingresso/stepRole">
-                        <u style="color:#BC1254; font-size:20px">Indietro</u>
-                    </nuxt-link>
-                </vs-col>
+                      <b @click="popupActive2 = false; popupActive1 = true" style="color:#BC1254; font-size:20px">Indietro</b>
+                    </vs-col>
                 <vs-col vs-w="6"></vs-col>
                 <vs-col vs-w="3" vs-type="flex" vs-justify="center" vs-align="center">
                     <vs-button 
@@ -101,11 +99,12 @@
         <div v-if="popupActive3">
             <vs-row>
             <vs-col vs-w="12">
-                <h1 style="padding-top:20px; font-size: 48px">Uscita confermata!<br> Grazie per la disponibilità.</h1><h2 style="padding-top:50px;">Vi ricordiamo di consegnare il badge in segreteria</h2>
+                <h1 style="padding-top:20px; font-size: 48px">Uscita confermata!<br> Grazie per la disponibilità.</h1>
+                <p style="font-family: Comic Sans MS; font-size:18px; padding-top:50px;">Vi ricordiamo di consegnare il badge in segreteria</p>
             </vs-col>
 
             </vs-row>
-            <div class="footerText" style="margin-top:288px;">
+            <div class="footerText" style="margin-top:304px;">
             <vs-row>
                 <vs-col vs-w="3" vs-type="flex" vs-justify="center" vs-align="center">
                  </vs-col>
@@ -127,7 +126,6 @@
 </template>
 
 <script>
-
 import digitalSignature from '@/components/digitalSignature'
 export default {
     name:'uscita',

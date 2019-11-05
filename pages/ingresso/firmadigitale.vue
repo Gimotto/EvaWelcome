@@ -6,11 +6,11 @@
     </div>
   </div>
 
-  <div class="footerText" style="margin-top:120px;">
+  <div class="footerText" style="margin-top:115px;">
     <vs-row>
       <vs-col vs-w="3" vs-type="flex" vs-justify="center" vs-align="center">
           <nuxt-link to="/ingresso/stepRole">
-            <u style="color:#BC1254; font-size:20px">Indietro</u>
+            <b style="color:#BC1254; font-size:20px">Indietro</b>
           </nuxt-link>
       </vs-col>
       <vs-col vs-w="6"></vs-col>

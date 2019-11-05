@@ -2,7 +2,7 @@
 <div>
     <div class="headerText" align="center">
             <h2>{{MyUser.nome}} {{MyUser.cognome}}</h2><br>
-            <h3>Seleziona il tuo ruolo e indica il motivo della tua visita</h3>
+            <p style="font-family: Comic Sans MS; font-size:18px;">Seleziona il tuo ruolo e indica il motivo della tua visita</p>
         </div>
 
     <div class="bodyText">
@@ -35,7 +35,7 @@
     <div class="footerText" style="margin-top:47px;">
         <vs-row>
             <vs-col vs-w="3" vs-type="flex" vs-justify="center" vs-align="center">
-                    <u @click="goBack()" style="color:#BC1254; cursor:pointer;  margin-top:1px; font-size:20px">Indietro</u>
+                    <b @click="goBack()" style="color:#BC1254; cursor:pointer;  margin-top:1px; font-size:20px">Indietro</b>
             </vs-col>
             <vs-col vs-w="6"></vs-col>
             <vs-col vs-w="3" vs-type="flex" vs-justify="center" vs-align="center">
