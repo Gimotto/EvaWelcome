@@ -1,24 +1,52 @@
 {
   "badges": [
     {
-      "id": 3,
-      "idUser": 3
-    },
-    {
-      "id": 4,
-      "idUser": 4
+      "id": 5,
+      "idUser": 24
     },
     {
       "id": 5,
-      "idUser": 5
+      "idUser": 24
+    },
+    {
+      "id": 5,
+      "idUser": 24
+    },
+    {
+      "id": 5,
+      "idUser": 24
+    },
+    {
+      "id": 5,
+      "idUser": 24
+    },
+    {
+      "id": 5,
+      "idUser": 24
+    },
+    {
+      "id": 5,
+      "idUser": 24
+    },
+    {
+      "id": 5,
+      "idUser": 24
+    },
+    {
+      "id": 5,
+      "idUser": 24
+    },
+    {
+      "id": 5,
+      "idUser": 24
+    },
+    {
+      "id": 5,
+      "idUser": 24
     },
     {
       "id": 6,
-      "idUser": 6
-    },
-    {
-      "id": 7,
-      "idUser": 7
+      "idUser": 25
     }
   ],
   "admin": [
@@ -44,8 +72,8 @@
         "ora": "17:11:51"
       },
       "uscita": {
-        "data": null,
-        "ora": null
+        "data": "05-11-2019",
+        "ora": "09:01:42"
       }
     },
     {
@@ -63,8 +91,8 @@
         "ora": "17:11:55"
       },
       "uscita": {
-        "data": null,
-        "ora": null
+        "data": "05-11-2019",
+        "ora": "09:01:36"
       }
     },
     {
@@ -82,8 +110,8 @@
         "ora": "17:11:59"
       },
       "uscita": {
-        "data": null,
-        "ora": null
+        "data": "05-11-2019",
+        "ora": "09:01:46"
       }
     },
     {
@@ -101,8 +129,8 @@
         "ora": "17:12:03"
       },
       "uscita": {
-        "data": null,
-        "ora": null
+        "data": "05-11-2019",
+        "ora": "09:01:27"
       }
     },
     {
@@ -118,6 +146,348 @@
       "entrata": {
         "data": "04-11-2019",
         "ora": "17:12:07"
+      },
+      "uscita": {
+        "data": "05-11-2019",
+        "ora": "09:01:21"
+      }
+    },
+    {
+      "id": 8,
+      "nome": "123",
+      "cognome": "123123",
+      "email": "",
+      "numtel": "",
+      "ruolo": "visitatore",
+      "motivo": "non_definito",
+      "descrizione": "",
+      "badge": 8,
+      "entrata": {
+        "data": "05-11-2019",
+        "ora": "09:01:14"
+      },
+      "uscita": {
+        "data": "05-11-2019",
+        "ora": "09:01:18"
+      }
+    },
+    {
+      "id": 9,
+      "nome": "123",
+      "cognome": "123",
+      "email": "",
+      "numtel": "",
+      "ruolo": "visitatore",
+      "motivo": "non_definito",
+      "descrizione": "",
+      "badge": 1,
+      "entrata": {
+        "data": "05-11-2019",
+        "ora": "09:04:07"
+      },
+      "uscita": {
+        "data": "05-11-2019",
+        "ora": "09:04:11"
+      }
+    },
+    {
+      "id": 10,
+      "nome": "sadf",
+      "cognome": "asd",
+      "email": "",
+      "numtel": "",
+      "ruolo": "visitatore",
+      "motivo": "non_definito",
+      "descrizione": "",
+      "badge": 1,
+      "entrata": {
+        "data": "05-11-2019",
+        "ora": "09:08:03"
+      },
+      "uscita": {
+        "data": "05-11-2019",
+        "ora": "09:08:07"
+      }
+    },
+    {
+      "id": 11,
+      "nome": "123",
+      "cognome": "123",
+      "email": "",
+      "numtel": "",
+      "ruolo": "visitatore",
+      "motivo": "non_definito",
+      "descrizione": "",
+      "badge": 1,
+      "entrata": {
+        "data": "05-11-2019",
+        "ora": "09:08:23"
+      },
+      "uscita": {
+        "data": "05-11-2019",
+        "ora": "09:08:27"
+      }
+    },
+    {
+      "id": 12,
+      "nome": "1231231",
+      "cognome": "23123123",
+      "email": "",
+      "numtel": "",
+      "ruolo": "visitatore",
+      "motivo": "non_definito",
+      "descrizione": "",
+      "badge": 1,
+      "entrata": {
+        "data": "05-11-2019",
+        "ora": "09:17:15"
+      },
+      "uscita": {
+        "data": "05-11-2019",
+        "ora": "09:17:30"
+      }
+    },
+    {
+      "id": 13,
+      "nome": "12",
+      "cognome": "123",
+      "email": "",
+      "numtel": "",
+      "ruolo": "visitatore",
+      "motivo": "non_definito",
+      "descrizione": "",
+      "badge": 1,
+      "entrata": {
+        "data": "05-11-2019",
+        "ora": "09:18:10"
+      },
+      "uscita": {
+        "data": "05-11-2019",
+        "ora": "09:18:14"
+      }
+    },
+    {
+      "id": 14,
+      "nome": "312312312",
+      "cognome": "123123123",
+      "email": "",
+      "numtel": "",
+      "ruolo": "visitatore",
+      "motivo": "non_definito",
+      "descrizione": "",
+      "badge": 1,
+      "entrata": {
+        "data": "05-11-2019",
+        "ora": "09:18:25"
+      },
+      "uscita": {
+        "data": "05-11-2019",
+        "ora": "09:25:26"
+      }
+    },
+    {
+      "id": 15,
+      "nome": "3123",
+      "cognome": "123123",
+      "email": "",
+      "numtel": "",
+      "ruolo": "visitatore",
+      "motivo": "non_definito",
+      "descrizione": "",
+      "badge": 2,
+      "entrata": {
+        "data": "05-11-2019",
+        "ora": "09:18:29"
+      },
+      "uscita": {
+        "data": "05-11-2019",
+        "ora": "09:25:24"
+      }
+    },
+    {
+      "id": 16,
+      "nome": "12312312312",
+      "cognome": "3123123123",
+      "email": "",
+      "numtel": "",
+      "ruolo": "visitatore",
+      "motivo": "non_definito",
+      "descrizione": "",
+      "badge": 3,
+      "entrata": {
+        "data": "05-11-2019",
+        "ora": "09:18:37"
+      },
+      "uscita": {
+        "data": "05-11-2019",
+        "ora": "09:18:47"
+      }
+    },
+    {
+      "id": 17,
+      "nome": "123",
+      "cognome": "213123",
+      "email": "",
+      "numtel": "",
+      "ruolo": "visitatore",
+      "motivo": "non_definito",
+      "descrizione": "",
+      "badge": 3,
+      "entrata": {
+        "data": "05-11-2019",
+        "ora": "09:24:53"
+      },
+      "uscita": {
+        "data": "05-11-2019",
+        "ora": "09:25:00"
+      }
+    },
+    {
+      "id": 18,
+      "nome": "3123",
+      "cognome": "123123",
+      "email": "",
+      "numtel": "",
+      "ruolo": "visitatore",
+      "motivo": "non_definito",
+      "descrizione": "",
+      "badge": 1,
+      "entrata": {
+        "data": "05-11-2019",
+        "ora": "09:25:53"
+      },
+      "uscita": {
+        "data": "05-11-2019",
+        "ora": "09:26:21"
+      }
+    },
+    {
+      "id": 19,
+      "nome": "12312",
+      "cognome": "312321",
+      "email": "",
+      "numtel": "",
+      "ruolo": "visitatore",
+      "motivo": "non_definito",
+      "descrizione": "",
+      "badge": 2,
+      "entrata": {
+        "data": "05-11-2019",
+        "ora": "09:25:57"
+      },
+      "uscita": {
+        "data": "05-11-2019",
+        "ora": "09:26:26"
+      }
+    },
+    {
+      "id": 20,
+      "nome": "123123",
+      "cognome": "123123123",
+      "email": "",
+      "numtel": "",
+      "ruolo": "visitatore",
+      "motivo": "non_definito",
+      "descrizione": "",
+      "badge": 3,
+      "entrata": {
+        "data": "05-11-2019",
+        "ora": "09:26:01"
+      },
+      "uscita": {
+        "data": "05-11-2019",
+        "ora": "09:26:15"
+      }
+    },
+    {
+      "id": 21,
+      "nome": "3123",
+      "cognome": "12312312",
+      "email": "",
+      "numtel": "",
+      "ruolo": "visitatore",
+      "motivo": "non_definito",
+      "descrizione": "",
+      "badge": 4,
+      "entrata": {
+        "data": "05-11-2019",
+        "ora": "09:26:05"
+      },
+      "uscita": {
+        "data": "05-11-2019",
+        "ora": "09:27:55"
+      }
+    },
+    {
+      "id": 22,
+      "nome": "1231231",
+      "cognome": "23123123",
+      "email": "",
+      "numtel": "",
+      "ruolo": "visitatore",
+      "motivo": "non_definito",
+      "descrizione": "",
+      "badge": 5,
+      "entrata": {
+        "data": "05-11-2019",
+        "ora": "09:26:33"
+      },
+      "uscita": {
+        "data": "05-11-2019",
+        "ora": "09:26:40"
+      }
+    },
+    {
+      "id": 23,
+      "nome": "123",
+      "cognome": "123123",
+      "email": "11",
+      "numtel": "23123",
+      "ruolo": "visitatore",
+      "motivo": "non_definito",
+      "descrizione": "",
+      "badge": 5,
+      "entrata": {
+        "data": "05-11-2019",
+        "ora": "09:27:09"
+      },
+      "uscita": {
+        "data": "05-11-2019",
+        "ora": "09:27:17"
+      }
+    },
+    {
+      "id": 24,
+      "nome": "12",
+      "cognome": "3123123",
+      "email": "",
+      "numtel": "",
+      "ruolo": "visitatore",
+      "motivo": "non_definito",
+      "descrizione": "",
+      "badge": 5,
+      "entrata": {
+        "data": "05-11-2019",
+        "ora": "09:27:41"
+      },
+      "uscita": {
+        "data": null,
+        "ora": null
+      }
+    },
+    {
+      "id": 25,
+      "nome": "12121",
+      "cognome": "212121",
+      "email": "",
+      "numtel": "",
+      "ruolo": "visitatore",
+      "motivo": "non_definito",
+      "descrizione": "",
+      "badge": 6,
+      "entrata": {
+        "data": "05-11-2019",
+        "ora": "09:29:13"
       },
       "uscita": {
         "data": null,

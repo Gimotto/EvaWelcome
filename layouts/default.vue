@@ -6,7 +6,12 @@
       </vs-col>
       <vs-col vs-w="6" vs-type="flex" vs-justify="center" vs-align="center"></vs-col>
       <vs-col vs-w="3" vs-type="flex" vs-justify="flex-end" vs-align="center" >
-        <nuxt-link to="/"><vs-icon icon="home" size="75px" style="margin-right:40px" color="#BC1254"></vs-icon></nuxt-link>
+        <div class="home">
+          <nuxt-link to="/">
+            <vs-icon icon="home" size="75px" style="margin-right:40px" color="#BC1254">
+            </vs-icon>
+          </nuxt-link>
+      </div>
       </vs-col>
     </vs-row>
     <div class="nuxtchild">
@@ -70,6 +75,8 @@ background: url('/backgroundAllPage.png')   no-repeat center center fixed ;
   -o-background-size: cover;
   background-size: cover;
 }
-
+.home:hover .material-icons{
+  color:white !important;
+}
 
 </style>
