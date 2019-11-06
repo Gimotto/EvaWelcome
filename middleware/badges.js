@@ -1,7 +1,7 @@
 export default async function(context){
     let {app} = context;
 
-    await app.$axios.get('http://localhost:8080/badges')
+    await app.$axios.get('badges')
     .then(({data})=>{
         app.store.commit('badges/setBadges', data)
     })

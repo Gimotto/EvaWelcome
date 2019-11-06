@@ -4,8 +4,9 @@
         <h2>Crea Badge</h2><br>
         <vs-input 
             size="large"
+            type="number"
             label="Inserisci il numero del Badge"
-            @blur="(idBadge == '' || idBadge > 50 || idBadge < 1) ? errorIdBadge =  true : errorIdBadge = false"
+            @blur="(idBadge == '' || idBadge > $welcome.maxIdBadge || idBadge < 1) ? errorIdBadge =  true : errorIdBadge = false"
             style="width:30%"
             :danger="errorIdBadge" 
             danger-text="Il Campo non può essere vuoto minore di 1 o maggiore di 50"
@@ -178,46 +179,30 @@ methods: {
         }
         if(this.countererrorformAnagrafica == 0){
             this.getCurrentDate()
-            this.$axios.$get('http://localhost:8080/badges')
+            this.$axios.$get('badges')
             .then(data=>{
                 let allBadge = data
-                allBadge.sort(function(a, b) {return a.id - b.id});
+                allBadge.sort(function(a, b) {return a.idBadge - b.idBadge});
                 for(let i in allBadge)
                     {
-                        if(this.idBadge == allBadge[i].id){
+                        if(this.idBadge == allBadge[i].idBadge){
                         return alert("Questo Id gia è utilizzato")}
                     }
-                this.$axios.$get('http://localhost:8080/users')
-                .then(data=>{
-                     let idU = ''
-                    if(data.length == 0){
-                        idU = 1
-                    }else{
-                        idU= data[data.length-1].id + 1
-                    }
-                    this.$axios.$post('http://localhost:8080/users', {
-                        id: idU,
-                        nome: this.formAnagrafica.nome,
-                        cognome: this.formAnagrafica.cognome,
-                        email: this.formAnagrafica.email,
-                        numtel: this.formAnagrafica.numtel,
-                        ruolo: this.userDetails.ruoloSelect,
-                        motivo: this.userDetails.motivoSelect,
-                        descrizione: this.userDetails.textarea,
-                        badge: this.idBadge,
-                        entrata: {
-                            data: this.date,
-                            ora: this.time,
-                        },
-                        uscita: {
-                            data: null,
-                            ora: null
-                        }
+                    this.$axios.$post('users/create', {
+                      nome: this.formAnagrafica.nome,
+                      cognome: this.formAnagrafica.cognome,
+                      email: this.formAnagrafica.email,
+                      numtel: this.formAnagrafica.numtel,
+                      ruolo: this.userDetails.ruoloSelect,
+                      motivo: this.userDetails.motivoSelect,
+                      descrizione: this.userDetails.textarea,
+                      badge: this.idBadge,
+                      signin: '',
                     })
                     .then(res=>{
-                        this.$axios.$post('http://localhost:8080/badges', {
-                            id: this.idBadge,
-                            idUser: idU
+                        this.$axios.$post('badges/create', {
+                            idBadge: this.idBadge,
+                            idUser: res.id
                         })
                         .then(res=>{
                             this.$vs.notify({title:'Success',text:'Utente registrato con successo',color:'success'})
@@ -232,14 +217,7 @@ methods: {
                     })
                 }).catch(e=>{
                     console.log(e)
-                }
-
-                )
-
-            })
-            .catch(e=>{
-                console.log(e)
-            })
+                })
         }
     },
 
