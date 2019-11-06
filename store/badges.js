@@ -6,7 +6,6 @@ export const state = () => ({
 })
 export const getters = {
     getBadges(state){
-        console.log(state.badges)
         return state.badges
     }
 }
