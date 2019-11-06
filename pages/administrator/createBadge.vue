@@ -209,14 +209,14 @@ methods: {
                             this.$router.push("/administrator/home")
                             })
                         .catch(e=>{
-                            console.log(e)
+                            this.$router.push({path:'/error', query: {error: 'Error: network database'}})
                         })
                     })
                     .catch(e=>{
-                        console.log(e)
+                        this.$router.push({path:'/error', query: {error: 'Error: network database'}})
                     })
                 }).catch(e=>{
-                    console.log(e)
+                    this.$router.push({path:'/error', query: {error: 'Error: network database'}})
                 })
         }
     },

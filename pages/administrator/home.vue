@@ -129,7 +129,7 @@ export default {
         this.$vs.notify({title:'Utente Cancellato',text:'Utente Cancellato manualmente',color:'danger'})
       })
       .catch(e =>{
-        console.log(e)
+        this.$router.push({path:'/error', query: {error: 'Error: network database'}})
       })
     },
     unlockBadge(badge){
@@ -168,7 +168,7 @@ export default {
        })
      })
       .catch(e=>{
-        console.log(e)
+        this.$router.push({path:'/error', query: {error: 'Error: network database'}})
       })
     }
   }
