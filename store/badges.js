@@ -23,10 +23,10 @@ export const actions={
             if(e.state.badges[i].idBadge == payload.badgeId){
                 let idBadge = e.state.badges[i].idBadge
                 let idUser = e.state.badges[i].idUser
-                    axios.put('http://192.168.2.28:3000/users/exit/'+idUser, {
+                    axios.put('http://192.168.2.198:3330/users/exit/'+idUser, {
                      signout: payload.image})
                     .then(res=>{
-                        axios.delete('http://192.168.2.28:3000/badges/delete/'+ idBadge)
+                        axios.delete('http://192.168.2.198:3330/badges/delete/'+ idBadge)
                         .then(data=>{
                             console.log(data)
                         })

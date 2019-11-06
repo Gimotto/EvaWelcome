@@ -144,7 +144,7 @@ export default {
             let filtredBadges = [];
             for(let i in this.badges){
                 if(this.researchBadge){
-                    if(this.badges[i].id.toString().startsWith(this.researchBadge)){
+                    if(this.badges[i].idBadge.toString().startsWith(this.researchBadge)){
                         filtredBadges.push(this.badges[i])
                     }
                 } else {

@@ -9,7 +9,7 @@
         <p style="font-size:250px">{{this.$route.query.num}}</p>
         </div> 
     </div>
-    <div class="footerText" style="margin-top:125px;">
+    <div class="footerText" style="margin-top:111px;">
         <vs-row>
             <vs-col vs-w="3" vs-type="flex" vs-justify="center" vs-align="center">
             </vs-col>
