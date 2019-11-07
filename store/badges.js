@@ -1,8 +1,11 @@
-import axios from 'axios'
-import moment from 'moment'
-
 export const state = () => ({
-    "badges":[]
+    "badges":[
+        {
+            id:1,
+            idBadge:1,
+            idUser:1
+        }
+    ]
 })
 export const getters = {
     getBadges(state){
@@ -23,19 +26,18 @@ export const actions={
             if(e.state.badges[i].idBadge == payload.badgeId){
                 let idBadge = e.state.badges[i].idBadge
                 let idUser = e.state.badges[i].idUser
-                    axios.put('http://192.168.2.198:3330/users/exit/'+idUser, {
-                     signout: payload.image})
+                    this.$axios.put('users/exit/'+idUser, {signout: payload.image})
                     .then(res=>{
-                        axios.delete('http://192.168.2.198:3330/badges/delete/'+ idBadge)
+                        this.$axios.delete('badges/delete/'+ idBadge)
                         .then(data=>{
-                            console.log(data)
+                            console.log('success delete')
                         })
                         .catch(e=>{
-                            console.error(e)
+                            this.$router.push({path:'/error', query: {error: 'Error: network database'}})
                       })
                     })
                     .catch(e=>{
-                       console.error(e)
+                        this.$router.push({path:'/error', query: {error: 'Error: network database'}})
                     })
                 e.commit('deleteBadge', i)
             }
