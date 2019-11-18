@@ -54,7 +54,7 @@ html {
    padding:20px;
    background-color:rgba(255, 255, 255, 0.7);
    border-radius: 10px;
-   height: calc(100% - 230px);
+   height: 380px;
    display: flex;
    flex-direction: column;
    box-shadow: 0 4px 25px 0 rgba(0,0,0,.8);
