@@ -44,22 +44,14 @@ html {
 }
 
 .nuxtchild{
-    margin-top:30px; 
-    margin-right:100px;
-    margin-left:100px;
-    padding:20px;
-    background-color:rgba(255, 255, 255, 0.7);
-    border-radius: 10px;
-    height: calc(100vh - 230px);
+    width: 100%;
     display: flex;
     flex-direction: column;
-    box-shadow: 0 4px 25px 0 rgba(0,0,0,.8);
 }
 .topnavBar{
     height: 50px;
 }
 .allPage{
-height:100vh;
 background: url('/backgroundAllPage.png')   no-repeat center center fixed ; 
   -webkit-background-size: cover;
   -moz-background-size: cover;

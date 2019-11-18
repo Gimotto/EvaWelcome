@@ -40,7 +40,7 @@ html {
 }
 
 .nuxtchild{
-    height: calc(100vh - 70px);
+    height: 100%;
     display: flex;
     flex-direction: column;
 }
