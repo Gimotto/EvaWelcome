@@ -15,6 +15,7 @@ export default {
   components: {topNavBar},
   mounted(){
    document.documentElement.requestFullscreen();
+   screen.orientation.lock('landscape');
  },
   head(){
     return {
