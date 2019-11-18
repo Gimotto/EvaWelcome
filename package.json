@@ -12,7 +12,6 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.3.6",
-    "@nuxtjs/pwa": "^3.0.0-beta.19",
     "cookie-universal-nuxt": "^2.0.18",
     "material-icons": "^0.3.1",
     "moment": "^2.24.0",

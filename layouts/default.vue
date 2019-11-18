@@ -1,6 +1,6 @@
 <template>
   <div class="allPage">
-    <div >
+    <div style="height: 50px">
         <topNavBar />  
     </div>
     <div class="nuxtchild">
@@ -13,9 +13,6 @@
 import topNavBar from '@/components/topNavBar'
 export default {  
   components: {topNavBar},
-  created(){
-    document.documentElement.requestFullscreen();
-  },
   head(){
     return {
       title: 'EvaWelcome',
@@ -30,13 +27,7 @@ export default {
 </script>
 
 <style scoped>
-  * {
-      -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-      -moz-box-sizing: border-box;    /* Firefox, other Gecko */
-      box-sizing: border-box;         /* Opera/IE 8+ */
-    }
 html {
-  width: 100%; 
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, 'Helvetica Neue', Arial, sans-serif;
   font-size: 16px;
@@ -48,18 +39,18 @@ html {
   box-sizing: border-box;
 }
 
-.nuxtchild{ 
-  height: 100%;
+.nuxtchild{
+    height: calc(100vh - 90px);
     display: flex;
     flex-direction: column;
 }
 .allPage{
-  position: absolute;
-  height: 100vh;
-  width: 100%;
-  background: url('/backgroundAllPage.png');
-  background-position: top right;
-  background-repeat: no-repeat;
+padding:20px;
+background: url('/backgroundAllPage.png')   no-repeat center center fixed ; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 .home:hover .material-icons{
   color:white !important;
