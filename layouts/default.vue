@@ -13,6 +13,9 @@
 import topNavBar from '@/components/topNavBar'
 export default {  
   components: {topNavBar},
+    mounted(){
+document.documentElement.requestFullscreen();
+  },
   head(){
     return {
       title: 'EvaWelcome',
@@ -45,7 +48,7 @@ html {
   box-sizing: border-box;
 }
 
-.nuxtchild{
+.nuxtchild{ 
     display: flex;
     flex-direction: column;
 }

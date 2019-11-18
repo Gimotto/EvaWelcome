@@ -15,9 +15,10 @@ export default {
   components: {
     topNavBar
   },
+  mounted(){
+document.documentElement.requestFullscreen();
+  },
   head(){
-    
-   
     return {
       title: 'EvaWelcome',
       meta:[
