@@ -55,8 +55,7 @@ html {
   background-repeat: no-repeat;
 }
 .topnavBar{
-    height: 50px;
-    position: fixed;
+  height:50px;
 }
 .home:hover .material-icons{
   color:white !important;
