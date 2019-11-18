@@ -40,17 +40,18 @@ html {
 }
 
 .nuxtchild{
-    height: calc(100vh - 90px);
+    height: calc(100vh - 290px);
     display: flex;
     flex-direction: column;
 }
 .allPage{
-padding:20px;
-background: url('/backgroundAllPage.png')   no-repeat center center fixed ; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  position: absolute;
+  min-height: 600px;
+  width: 100%;
+  background: url('/backgroundAllPage.png');
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 280%;
 }
 .home:hover .material-icons{
   color:white !important;
