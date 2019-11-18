@@ -40,13 +40,11 @@ html {
 }
 
 .nuxtchild{
-    height: calc(100vh - 290px);
     display: flex;
     flex-direction: column;
 }
 .allPage{
-  position: absolute;
-  min-height: 600px;
+  height:600px;
   width: 100%;
   background: url('/backgroundAllPage.png');
   background-position: top right;

@@ -43,8 +43,8 @@ mounted(){
 }
 .container {
   width: 100%;
+  height:100%;
   margin: 0 auto;
-  min-height: 700px;
   display: flex;
   justify-content: center;
   align-items: center;
