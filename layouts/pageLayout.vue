@@ -15,7 +15,6 @@ export default {
   components: {
     topNavBar
   },
-
   head(){
     return {
       title: 'EvaWelcome',
@@ -26,6 +25,14 @@ export default {
       
     }
   },
+  mounted(){
+    this.fullscreen()
+  },
+  methods:{
+    fullscreen(){
+      document.documentElement.requestFullscreen();
+    }
+  }
 }
 </script>
 
