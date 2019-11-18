@@ -44,6 +44,8 @@ html {
 }
 
 .nuxtchild{
+  padding-left:40px;
+  padding-right:40px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -52,11 +54,15 @@ html {
     height: 50px;
 }
 .allPage{
-background: url('/backgroundAllPage.png')   no-repeat center center fixed ; 
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  padding:20px;
+  background: url('/backgroundAllPage.png')   no-repeat center center fixed ; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover; 
+  background-size: cover;
 }
 
 .home:hover .material-icons{

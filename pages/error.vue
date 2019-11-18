@@ -7,6 +7,7 @@
 <script>
 export default {
     name: 'PageNotFound',
+    layout: 'pageLayout',
     props:{},
     data(){
         return {
@@ -22,6 +23,7 @@ export default {
 .container{
     margin-top: 120px;
     width: 100%;
+    height: 100%;
     text-align: center;
     color: #343434
 }

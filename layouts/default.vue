@@ -27,7 +27,13 @@ export default {
 </script>
 
 <style scoped>
+  * {
+      -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+      -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+      box-sizing: border-box;         /* Opera/IE 8+ */
+    }
 html {
+  width: 100%; 
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, 'Helvetica Neue', Arial, sans-serif;
   font-size: 16px;
@@ -45,6 +51,9 @@ html {
     flex-direction: column;
 }
 .allPage{
+  width: 100%;
+  position: absolute;
+  height: 100%;
 padding:20px;
 background: url('/backgroundAllPage.png')   no-repeat center center fixed ; 
   -webkit-background-size: cover;

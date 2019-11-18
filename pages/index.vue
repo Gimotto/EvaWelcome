@@ -44,7 +44,7 @@ mounted(){
 .container {
   width: 100%;
   margin: 0 auto;
-  min-height: 90vh;
+  min-height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;

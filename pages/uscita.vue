@@ -214,7 +214,7 @@ export default {
 
 <style scoped>
     .container {
-        min-height: calc(100vh - 170px);
+        min-height: calc(100% - 170px);
         display: block;
         justify-content: center;
         align-items: center;
