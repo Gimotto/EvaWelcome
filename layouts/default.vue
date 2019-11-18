@@ -1,6 +1,6 @@
 <template>
   <div class="allPage">
-    <div style="height: 50px">
+    <div class="topnavBar">
         <topNavBar />  
     </div>
     <div class="nuxtchild">
@@ -49,10 +49,14 @@ html {
 .allPage{
   height:600px;
   width: 100%;
+  overflow: hidden;
   background: url('/backgroundAllPage.png');
   background-position: top right;
   background-repeat: no-repeat;
-  background-size: 280%;
+}
+.topnavBar{
+    height: 50px;
+    position: fixed;
 }
 .home:hover .material-icons{
   color:white !important;

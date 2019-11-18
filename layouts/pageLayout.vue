@@ -51,6 +51,7 @@ html {
 }
 .topnavBar{
     height: 50px;
+    position: fixed;
 }
 .allPage{
   position: absolute;
