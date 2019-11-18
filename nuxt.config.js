@@ -1,9 +1,21 @@
-
+const isDev = process.env.NODE_ENV !== 'production'
 export default {
   mode: 'spa',
   /*
   ** Headers of the page
   */
+  pwa: {
+    manifest: {
+      lang: 'en',
+      name: "EvaWelcome",
+      short_name: "EvaWel",
+      display: 'standalone',
+      theme_color: '#F11010',
+    },
+    workbox: {
+      dev: isDev // Put workbox module into development mode based on current NODE_ENV variable
+    }
+  },
   head: {
     title: process.env.npm_package_name || '',
     meta: [
@@ -45,6 +57,7 @@ export default {
     // Doc: https://axios.nuxtjs.org/usage
     'cookie-universal-nuxt',
     '@nuxtjs/axios',
+    '@nuxtjs/pwa'
   ],
   /*
   ** Axios module configuration

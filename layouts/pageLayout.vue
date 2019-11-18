@@ -55,15 +55,13 @@ html {
     height: 50px;
 }
 .allPage{
-  width: 100%;
   position: absolute;
   height: 100%;
-padding:20px;
-background: url('/backgroundAllPage.png')  ; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  width: 100%;
+  background: url('/backgroundAllPage.png');
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 280%;
 }
 
 .home:hover .material-icons{

@@ -29,6 +29,7 @@ export default {
 middleware: 'info',
 layout: 'default',
 mounted(){
+  document.documentElement.requestFullscreen();
   this.$cookies.remove("userTemp")
   this.$cookies.remove("userTempDetails")
   clearTimeout(window.welcome)
