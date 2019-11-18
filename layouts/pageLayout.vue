@@ -36,7 +36,6 @@ export default {
   },
   mounted(){
     this.fullscreen()
-    screen.orientation.lock('landscape');
   },
   methods:{
     fullscreen(){
