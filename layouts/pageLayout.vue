@@ -56,7 +56,7 @@ html {
 }
 .allPage{
   position: absolute;
-  height: 100%;
+  height: 1000px;
   width: 100%;
   background: url('/backgroundAllPage.png');
   background-position: top right;
