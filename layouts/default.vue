@@ -13,7 +13,7 @@
 import topNavBar from '@/components/topNavBar'
 export default {  
   components: {topNavBar},
-  mounted(){
+  created(){
     document.documentElement.requestFullscreen();
   },
   head(){
@@ -54,7 +54,7 @@ html {
 }
 .allPage{
   position: absolute;
-  height: 650px;
+  height: 100%;
   width: 100%;
   background: url('/backgroundAllPage.png');
   background-position: top right;
