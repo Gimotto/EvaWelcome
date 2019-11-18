@@ -57,7 +57,7 @@
             </vs-col>
         </vs-row>  
         </div>
-        <div class="footerText" style="margin-top:36px;">
+        <div class="footerText" style="margin-top:16px;">
             <vs-row>
                 <vs-col vs-w="3" vs-type="flex" vs-justify="center" vs-align="center">
                     <nuxt-link to="/">

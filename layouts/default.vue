@@ -47,7 +47,7 @@ html {
     flex-direction: column;
 }
 .allPage{
-  height:570px;
+  height:552px;
   width: 100%;
   overflow: hidden;
   background: url('/backgroundAllPage.png');

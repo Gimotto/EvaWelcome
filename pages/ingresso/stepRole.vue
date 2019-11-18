@@ -32,7 +32,7 @@
             </vs-col>
         </vs-row>
     </div>
-    <div class="footerText" style="margin-top:42px;">
+    <div class="footerText" style="margin-top:22px;">
         <vs-row>
             <vs-col vs-w="3" vs-type="flex" vs-justify="center" vs-align="center">
                     <b @click="goBack()" style="color:#BC1254; cursor:pointer;  margin-top:1px; font-size:20px">Indietro</b>

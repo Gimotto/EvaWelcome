@@ -54,7 +54,7 @@ html {
    padding:20px;
    background-color:rgba(255, 255, 255, 0.7);
    border-radius: 10px;
-   height: calc(100% - 200px);
+   height: 100%;
    display: flex;
    flex-direction: column;
    box-shadow: 0 4px 25px 0 rgba(0,0,0,.8);
@@ -64,7 +64,7 @@ html {
 }
 .allPage{
   position: absolute;
-  min-height: 600px;
+  min-height: 552px;
   width: 100%;
   background: url('/backgroundAllPage.png');
   background-position: top right;
