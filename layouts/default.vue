@@ -54,12 +54,11 @@ html {
 }
 .allPage{
   position: absolute;
-  height: 100%;
+  height: 100vh;
   width: 100%;
   background: url('/backgroundAllPage.png');
   background-position: top right;
   background-repeat: no-repeat;
-  background-size: 280%;
 }
 .home:hover .material-icons{
   color:white !important;
