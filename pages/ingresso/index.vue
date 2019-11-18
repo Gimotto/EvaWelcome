@@ -16,8 +16,17 @@
                     @blur="blurcheckAnagrafica(formAnagrafica.nome, 'nome')"
                     :danger="errorformAnagrafica.nome" 
                     v-model="formAnagrafica.nome"/>
+                    <vs-input label="Email"
+                    style="width:100%; padding: 17px;"
+                    size="large"
+                    @keyup.enter="checkAnagrafica()"
+                    v-model="formAnagrafica.email"/>
                     
-                    <vs-input 
+                </div>
+            </vs-col>
+            <vs-col vs-w="6">
+                <div>
+                <vs-input 
                     label="Cognome*" 
                     size="large"
                     @keyup.enter="checkAnagrafica()"
@@ -25,15 +34,6 @@
                     @blur="blurcheckAnagrafica(formAnagrafica.cognome, 'cognome')"
                     :danger="errorformAnagrafica.cognome" 
                     v-model="formAnagrafica.cognome"/>
-                </div>
-            </vs-col>
-            <vs-col vs-w="6">
-                <div>
-                <vs-input label="Email"
-                    style="width:100%; padding: 17px;"
-                    size="large"
-                    @keyup.enter="checkAnagrafica()"
-                    v-model="formAnagrafica.email"/>
                     
                     <vs-input 
                     label="Numero Telefono" 
