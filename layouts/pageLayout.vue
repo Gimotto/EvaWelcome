@@ -57,8 +57,8 @@ html {
   width: 100%;
   position: absolute;
   height: 100%;
-  padding:20px;
-  background: url('/backgroundAllPage.png')   no-repeat center center fixed ; 
+padding:20px;
+background: url('/backgroundAllPage.png')  ; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
