@@ -50,7 +50,7 @@
               </div>
             </vs-col>
             </vs-row>
-            <div class="footerText" style="margin-top:105px;">
+            <div class="footerText" style="margin-top:85px;">
             <vs-row>
                 <vs-col vs-w="3" vs-type="flex" vs-justify="center" vs-align="center">
                     <b @click="cancelConfirm()" style="color:#BC1254; cursor: pointer; font-size:20px">Indietro</b>
@@ -76,7 +76,7 @@
                 </div>
             </div>
 
-            <div class="footerText" style="margin-top:80px;">
+            <div class="footerText" style="margin-top:60px;">
                 <vs-row>
                 <vs-col vs-w="3" vs-type="flex" vs-justify="center" vs-align="center">
                       <b @click="popupActive2 = false; popupActive1 = true" style="color:#BC1254; font-size:20px">Indietro</b>
@@ -105,7 +105,7 @@
             </vs-col>
 
             </vs-row>
-            <div class="footerText" style="margin-top:164px;">
+            <div class="footerText" style="margin-top:144px;">
             <vs-row>
                 <vs-col vs-w="3" vs-type="flex" vs-justify="center" vs-align="center">
                  </vs-col>
