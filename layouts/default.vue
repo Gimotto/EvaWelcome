@@ -39,7 +39,7 @@ export default {
  @media only screen and (orientation:portrait){
         .allPage{display: none}
         .noLandscape{
-          height:974px;
+          height:976px;
           width: 100%;
           overflow: hidden;
           background: url('/backgroundAllPage.png');
@@ -49,7 +49,7 @@ export default {
           .containernoLandscape{
           width: 100%;
           display: flex;
-          height:974px;
+          height:976px;
           justify-content: center;
           padding:20px;
           background-color:rgba(255, 255, 255, 0.4);
