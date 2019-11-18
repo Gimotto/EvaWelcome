@@ -28,7 +28,7 @@
             <!--TextArea-->
             <vs-col style="padding:25px" vs-w="12">
                 <p style="font-size:20px; color: rgba(0,0,0,.6);">Aggiungi una descrizione: </p>
-                <vs-textarea style="background-color:white !important; height:100px; max-height:200px" v-model="userDetails.textarea" />
+                <vs-textarea style="background-color:white !important; height:100px; max-height:200px"  @keyup.enter="goNext()" v-model="userDetails.textarea" />
             </vs-col>
         </vs-row>
     </div>
