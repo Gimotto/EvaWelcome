@@ -1,4 +1,4 @@
-import axios from 'axios'
+
 import moment from 'moment'
 
 export const state = () => ({
@@ -23,10 +23,10 @@ export const actions={
             if(e.state.badges[i].idBadge == payload.badgeId){
                 let idBadge = e.state.badges[i].idBadge
                 let idUser = e.state.badges[i].idUser
-                    axios.put('http://192.168.2.198:3330/users/exit/'+idUser, {
+                    this.$axios.put('users/exit/'+idUser, {
                      signout: payload.image})
                     .then(res=>{
-                        axios.delete('http://192.168.2.198:3330/badges/delete/'+ idBadge)
+                        this.$axios.delete('badges/delete/'+ idBadge)
                         .then(data=>{
                             console.log(data)
                         })
