@@ -48,11 +48,16 @@ html {
 }
 
 .nuxtchild{
-  padding-left:40px;
-  padding-right:40px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+   margin-top:30px;
+   margin-right:100px;
+   margin-left:100px;
+   padding:20px;
+   background-color:rgba(255, 255, 255, 0.7);
+   border-radius: 10px;
+   height: calc(100vh - 230px);
+   display: flex;
+   flex-direction: column;
+   box-shadow: 0 4px 25px 0 rgba(0,0,0,.8);
 }
 .topnavBar{
     height: 50px;
