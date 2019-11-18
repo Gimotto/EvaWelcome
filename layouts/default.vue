@@ -1,6 +1,6 @@
 <template>
   <div class="allPage">
-    <div style="height: 50px">
+    <div >
         <topNavBar />  
     </div>
     <div class="nuxtchild">
@@ -19,12 +19,7 @@ export default {
       meta:[
         {name:"viewport", content:"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"}
       ],
-       link: [
-      {
-        rel: "stylesheet",
-        href: "style.css"
-      }
-    ]
+
       
     }
   },
@@ -45,7 +40,7 @@ html {
 }
 
 .nuxtchild{
-    height: calc(100vh - 90px);
+    height: calc(100vh - 70px);
     display: flex;
     flex-direction: column;
 }

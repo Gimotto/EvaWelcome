@@ -42,7 +42,7 @@ mounted(){
   margin: 20px;
 }
 .container {
-  width: 85%;
+  width: 100%;
   margin: 0 auto;
   min-height: 90vh;
   display: flex;

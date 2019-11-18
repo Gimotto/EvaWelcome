@@ -1,8 +1,8 @@
 <template>
 <div>
     <div class="headerText" align="center">
-            <h2>{{MyUser.nome}} {{MyUser.cognome}}</h2><br>
-            <p style="font-family: Comic Sans MS; font-size:18px;">Seleziona il tuo ruolo e indica il motivo della tua visita</p>
+            <h3>{{MyUser.nome}} {{MyUser.cognome}}</h3>
+            <p>Seleziona il tuo ruolo e indica il motivo della tua visita</p>
         </div>
 
     <div class="bodyText">
@@ -27,12 +27,12 @@
             </vs-col>
             <!--TextArea-->
             <vs-col style="padding:25px" vs-w="12">
-                <p style="font-size:20px ;padding-bottom:10px; color: rgba(0,0,0,.6);">Aggiungi una descrizione: </p>
-                <vs-textarea style="height:150px; max-height:200px" v-model="userDetails.textarea" />
+                <p style="font-size:20px; color: rgba(0,0,0,.6);">Aggiungi una descrizione: </p>
+                <vs-textarea style="background-color:white !important; height:100px; max-height:200px" v-model="userDetails.textarea" />
             </vs-col>
         </vs-row>
     </div>
-    <div class="footerText" style="margin-top:47px;">
+    <div class="footerText" style="margin-top:42px;">
         <vs-row>
             <vs-col vs-w="3" vs-type="flex" vs-justify="center" vs-align="center">
                     <b @click="goBack()" style="color:#BC1254; cursor:pointer;  margin-top:1px; font-size:20px">Indietro</b>

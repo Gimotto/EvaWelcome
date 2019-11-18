@@ -1,7 +1,4 @@
 
-.vs-input--input.xlarge{padding:1.3rem; font-size:28px}.vs-input--input.xlarge+.vs-placeholder-label-xlarge{padding:1 .6rem; font-size:28px}
-.vs-input--placeholder.xlarge{padding-left:.55rem; font-size:20px}
-.vuesax-app-is-ltr .vs-input--input.xlarge+.vs-placeholder-label, .vuesax-app-is-ltr .vs-input--input:focus+.vs-placeholder-label{font-size: 20px}
 .vuesax-app-is-ltr .vs-input--label {font-size: 20px;}
 .vuesax-app-is-ltr .vs-select--input {padding:0.7rem; font-size:15px}
 .vs-select--item {font-size:15px}

@@ -28,7 +28,7 @@ export const actions={
                     .then(res=>{
                         this.$axios.delete('badges/delete/'+ idBadge)
                         .then(data=>{
-                            console.log(data)
+                            large(data)
                         })
                         .catch(e=>{
                             console.error(e)

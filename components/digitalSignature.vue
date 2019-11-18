@@ -6,7 +6,7 @@
   </div>
     <div class="firmadigitale">
         <VueSignaturePad
-            height="300px"
+            height="200px"
             ref="signaturePad"
             />
     </div>

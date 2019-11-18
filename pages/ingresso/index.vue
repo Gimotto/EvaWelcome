@@ -1,10 +1,8 @@
 <template>
     <div>
         <div class="headerText" align="center">
-            <h2>Benvenuto</h2><br>
-            <p style="font-family: Comic Sans MS; font-size:18px;">Inserisci i tuoi dati Anagrafici per proseguire con la registrazione:
-
-            </p>
+            <h3>Benvenuto</h3>
+            <p>Inserisci i tuoi dati Anagrafici per proseguire con la registrazione:</p>
         </div>
         <div class="bodyText">
         <vs-row>
@@ -12,16 +10,16 @@
                 <div >
                     <vs-input 
                     label="Nome*" 
-                    style="width:100%; padding: 20px;"
-                    size="xlarge"
+                    style="width:100%; padding: 17px;"
+                    size="large"
                     @blur="blurcheckAnagrafica(formAnagrafica.nome, 'nome')"
                     :danger="errorformAnagrafica.nome" 
                     v-model="formAnagrafica.nome"/>
                     
                     <vs-input 
                     label="Cognome*" 
-                    size="xlarge"
-                   style="width:100%; padding: 20px;"
+                    size="large"
+                   style="width:100%; padding: 17px;"
                     @blur="blurcheckAnagrafica(formAnagrafica.cognome, 'cognome')"
                     :danger="errorformAnagrafica.cognome" 
                     v-model="formAnagrafica.cognome"/>
@@ -30,32 +28,32 @@
             <vs-col vs-w="6">
                 <div>
                 <vs-input label="Email"
-                    style="width:100%; padding: 20px;"
-                    size="xlarge"
+                    style="width:100%; padding: 17px;"
+                    size="large"
                     v-model="formAnagrafica.email"/>
 
                     <vs-input 
                     label="Numero Telefono" 
-                    style="width:100%; padding: 20px;"
-                    size="xlarge"
+                    style="width:100%; padding: 17px;"
+                    size="large"
                     v-model="formAnagrafica.numtel"/>
                 </div>
             </vs-col>
         </vs-row>
         <vs-row style="padding:20px">
             <vs-col  vs-w="3" align="left">
-                <vs-checkbox  color="#BC1254" class="checkPrivacy" style=" max-width:200px; padding-bottom:10px;" size="large" v-model="privacyCheck"><b>Conferma Privacy</b></vs-checkbox>
+                <vs-checkbox  color="#BC1254" class="checkPrivacy" style=" max-width:200px; padding-bottom:5px;" size="large" v-model="privacyCheck"><b>Conferma Privacy</b></vs-checkbox>
             </vs-col>
             <vs-col  vs-w="9" align="left">
-                <p >Confermando dichiari di aver letto e accetti integralmente le nostre condizioni generali di uso.
+                <p style="font-size:13px" >Confermando dichiari di aver letto e accetti integralmente le nostre condizioni generali di uso.
                     Prendi visione della nostra Informativa sulla privacy e della nostra Informativa sui Cookie</p>
             </vs-col>
             <vs-col vs-w= "12" align="center">
-            <div style="height:15px;"><b style="color: red; padding-bottom:10px;">{{errorprivacyCheck}}</b></div>
+            <div style="height:15px;"><b style="color: red; padding-bottom:5px;">{{errorprivacyCheck}}</b></div>
             </vs-col>
         </vs-row>  
         </div>
-        <div class="footerText" style="margin-top:46px;">
+        <div class="footerText" style="margin-top:36px;">
             <vs-row>
                 <vs-col vs-w="3" vs-type="flex" vs-justify="center" vs-align="center">
                     <nuxt-link to="/">

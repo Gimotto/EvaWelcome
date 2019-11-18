@@ -1,15 +1,15 @@
 <template>
 <div>
     <div class="headerText" align="center">
-            <h2>Grazie per la tua pazienza</h2><br>
-             <p style="font-family: Comic Sans MS; font-size:18px;">Ecco il tuo numero</p>
+            <h3>Grazie per la tua pazienza</h3>
+             <p>Ecco il tuo numero</p>
     </div>
     <div class="bodyText">
         <div align="center">
-        <p style="font-size:250px">{{this.$route.query.num}}</p>
+        <p style="font-size:150px">{{this.$route.query.num}}</p>
         </div> 
     </div>
-    <div class="footerText" style="margin-top:111px;">
+    <div class="footerText" style="margin-top:137px;">
         <vs-row>
             <vs-col vs-w="3" vs-type="flex" vs-justify="center" vs-align="center">
             </vs-col>

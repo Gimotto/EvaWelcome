@@ -6,7 +6,7 @@
     </div>
   </div>
 
-  <div class="footerText" style="margin-top:115px;">
+  <div class="footerText" style="margin-top:76px;">
     <vs-row>
       <vs-col vs-w="3" vs-type="flex" vs-justify="center" vs-align="center">
           <nuxt-link to="/ingresso/stepRole">

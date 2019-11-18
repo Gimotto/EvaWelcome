@@ -23,12 +23,7 @@ export default {
       meta:[
         {name:"viewport", content:"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"}
       ],
-       link: [
-      {
-        rel: "stylesheet",
-        href: "../style.css"
-      }
-    ]
+
       
     }
   },
@@ -55,13 +50,13 @@ html {
     padding:20px;
     background-color:rgba(255, 255, 255, 0.7);
     border-radius: 10px;
-    height: calc(100vh - 280px);
+    height: calc(100vh - 230px);
     display: flex;
     flex-direction: column;
     box-shadow: 0 4px 25px 0 rgba(0,0,0,.8);
 }
 .topnavBar{
-    height: 100px;
+    height: 50px;
 }
 .allPage{
 height:100vh;

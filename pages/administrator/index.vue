@@ -8,7 +8,7 @@
     <vs-input 
         label="Username" 
         style="width:100%; padding: 20px;"
-        size="xlarge"
+        size="large"
         @blur="blurcheckformLogin(formLogin.username, 'username')"
         @keyup.enter="checkLogin"
         :danger="errorformLogin.username" 
@@ -19,7 +19,7 @@
         type="password"
         label="Password" 
         style="width:100%; padding: 20px;"
-        size="xlarge"
+        size="large"
         @blur="blurcheckformLogin(formLogin.password, 'password')"
         @keyup.enter="checkLogin"
         :danger="errorformLogin.password" 

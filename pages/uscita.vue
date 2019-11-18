@@ -3,11 +3,11 @@
         <vs-row v-if="badgesList">
             <vs-row>
                 <vs-col vs-w="12" vs-type="flex" vs-justify="center" vs-align="center">
-                    <h2 style="font-size: 34px">Ricerca oppure seleziona il badge</h2>
+                    <h2 style="font-size: 28px">Ricerca oppure seleziona il badge</h2>
                 </vs-col>
                 <vs-col vs-w="12" vs-type="flex" vs-justify="center" vs-align="center">
                     <div style="padding: 20px">
-                        <vs-input id="input" type="number" size="xlarge" style="width:100%" v-model="researchBadge" icon="search" icon-after="true"/>
+                        <vs-input id="input" type="number" size="large" style="width:100%" v-model="researchBadge" icon="search" icon-after="true"/>
                     </div>
                 </vs-col>
             </vs-row>
@@ -44,13 +44,13 @@
            <vs-col vs-w="12" vs-type="flex" vs-justify="center" vs-align="center">
             <h2>Il Badge in suo possesso è il numero seguente?  </h2>
            </vs-col>
-            <vs-col vs-w="12" style="padding:35px;" vs-type="flex" vs-justify="center" vs-align="center">
+            <vs-col vs-w="12" style="padding:15px;" vs-type="flex" vs-justify="center" vs-align="center">
               <div class="col">
-                    <h1 style="color: #BC1254; font-size: 200px">{{ selectedBadge }}</h1>
+                    <h1 style="color: #BC1254; font-size: 150px">{{ selectedBadge }}</h1>
               </div>
             </vs-col>
             </vs-row>
-            <div class="footerText" style="margin-top:140px;">
+            <div class="footerText" style="margin-top:105px;">
             <vs-row>
                 <vs-col vs-w="3" vs-type="flex" vs-justify="center" vs-align="center">
                     <b @click="cancelConfirm()" style="color:#BC1254; cursor: pointer; font-size:20px">Indietro</b>
@@ -76,7 +76,7 @@
                 </div>
             </div>
 
-            <div class="footerText" style="margin-top:120px;">
+            <div class="footerText" style="margin-top:80px;">
                 <vs-row>
                 <vs-col vs-w="3" vs-type="flex" vs-justify="center" vs-align="center">
                       <b @click="popupActive2 = false; popupActive1 = true" style="color:#BC1254; font-size:20px">Indietro</b>
@@ -105,7 +105,7 @@
             </vs-col>
 
             </vs-row>
-            <div class="footerText" style="margin-top:304px;">
+            <div class="footerText" style="margin-top:164px;">
             <vs-row>
                 <vs-col vs-w="3" vs-type="flex" vs-justify="center" vs-align="center">
                  </vs-col>
@@ -227,8 +227,8 @@ export default {
         text-align: center;
     }
     .circle{
-        width: 200px;
-        height: 120px;
+        width: 130px;
+        height: 85px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -236,7 +236,7 @@ export default {
         cursor: pointer;
     }
     .scrolltable {
-    height:338px;
+    height:232px;
     display: block;
     overflow-x: auto;
     white-space: nowrap;
