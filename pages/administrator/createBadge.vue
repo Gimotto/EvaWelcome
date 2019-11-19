@@ -226,7 +226,7 @@ methods: {
 </script>
 <style scoped>
 .bodyPage{
-height: calc(100% - 340px);  
+height: calc(100% - 140px);  
 }
 .topPage{
 height: 160px;
