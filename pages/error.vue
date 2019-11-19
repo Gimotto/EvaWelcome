@@ -1,13 +1,15 @@
 <template>
+<div class="superContainer">
      <div class="container">
-     <h1>{{error}}</h1>
+         <img style="width:400px" src="/no-connections.gif" />
+     <h1 style="margin-top:-40px; margin-bottom:40px">{{error}}</h1>
      <a href="/">home</a>
    </div>
+</div>
 </template>
 <script>
 export default {
     name: 'PageNotFound',
-    layout: 'pageLayout',
     props:{},
     data(){
         return {
@@ -21,7 +23,6 @@ export default {
 </script>
 <style scoped>
 .container{
-    margin-top: 120px;
     width: 100%;
     height: 100%;
     text-align: center;
@@ -45,5 +46,15 @@ export default {
 }
 .container a:hover{
     background: #e55039;
+}
+.superContainer{
+   margin-right:100px;
+   margin-left:100px;
+   padding:20px;
+   background-color:rgba(255, 255, 255);
+   border-radius: 10px;
+   display: flex;
+   flex-direction: column;
+   box-shadow: 0 4px 25px 0 rgba(0,0,0,.8);
 }
 </style>
